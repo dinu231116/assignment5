@@ -3,78 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dinu's phoneshop</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body >
     <section class="bg-gray-100">
-    <nav class="bg-blue shadow-md border-t-4 border-blue-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="bg-blue-400 shadow-md border-t-4 border-blue-900">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <a href="#" class="text-lg font-semibold text-gray-700">My phones</a>
-                <div class="hidden md:flex space-x-7">
-                    <a href="#" class="text-orange-500 font-semibold">Home</a>
-                    <a href="#" class="text-gray-700 ">About Us</a>
-                    <a href="#" class="text-gray-700 ">Services</a>
-                    <a href="#" class="text-gray-700 ">Team</a>
-                    <a href="text-gray-700 hover:text-orange-500 flex items-center">
-                            Drop Down
-                    <a href="#" class="text-gray-700 hover:text-orange-500">Contact</a>
-                    <a href="#" class="hidden md:block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">
-                            Get Started
-                
-            </section>
-            <section class="bg-orange-50">
-                <section class="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-16">
-                    <div class="max-w-lg">
-                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800">New collection of mobile phones</h1>
-                        <p class="text-gray-600 mt-4">Brands like Apple, Samsung, and Google continuously innovate, introducing features such as AI-powered cameras, foldable screens, and 5G connectivity.</p>
-                        <button class="mt-6 bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">Get Started</button>
-                    </div>
-                    <div class="mt-8 md:mt-0">
-                        <img src="./Assets/image/images.jpegman" alt="Illustration" class="w-80">
-                    </div>
-                </section>
-            <secttion class="bg-gray-100 flex items-center justify-center min-h-screen">
-                <div class="max-w-7xl mx-auto text-center p-8">
-                    <!--section title-->
-                    <p class="text-sm text-gray-700">Portfolio</p>
-                    <h2 class="text-2xl font-semibold text-gray-700">Check out our beautiful Portfolio</h2>
-                    <!--category filters-->
-                    <div class="mt-4 space-x-4">
-                        <button class="px-4 py-2 text-gray-600 hover:text-orange-500">App</button>
-                        <button class="px-4 py-2 text-gray-600 hover:text-orange-500">Card</button>
-                        <button class="px-4 py-2 text-gray-600 hover:text-orange-500">Web</button>
-                    </div>
-                    <!--portfolio grid-->
-                    <div class="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3">
-                        <!--portfolio item 1-->
-                        <div class="bg-white p-4 rounded-lg shadow-md">
-                            <img src="./Assets/image/Untitled.jpeg1"alt="Portfolio item"class="rounded-md w-full">
-                        </div>
-                        <!--portfolio item 2-->
-                        <div class="bg-white p-4 rounded-lg shadow-md">
-                            <img src="./Assets/image/Untitled.jpeg2"alt="Portfolio item"class="rounded-md w-full">
-                        </div>
-                        <!--portfolio item 3-->
-                        <div class="bg-white p-4 rounded-lg shadow-md">
-                            <img src="./Assets/image/Untitled.jpeg3"alt="Portfolio item"class="rounded-md w-full">
-                        </div>
-                        <!--portfolio item 4-->
-                        <div class="bg-white p-4 rounded-lg shadow-md">
-                            <img src="./Assets/image/images.jpeg4"alt="Portfolio item"class="rounded-md w-full">
-                        </div>
-                        <!--portfolio item 5-->
-                        <div class="bg-white p-4 rounded-lg shadow-md">
-                            <img src="./Assets/image/images.jpeg5"alt="Portfolio item"class="rounded-md w-full">
-                        </div>
-                        <!--portfolio item 6-->
-                        <div class="bg-white p-4 rounded-lg shadow-md">
-                            <img src="./Assets/image/images.jpeg6"alt="Portfolio item"class="rounded-md w-full">
-                        </div>
-                    </div>
+              <a href="#" class="text-lg font-semibold text-gray-700">Dinu's phoneshop</a>
+              
+              <div class="hidden md:flex space-x-7">
+                <a href="#" class="text-orange-500 font-semibold">Home</a>
+                <a href="#" class="text-gray-700">About Us</a>
+                <a href="#" class="text-gray-700">Services</a>
+                <a href="#" class="text-gray-700">Portfolio</a>
+                <a href="#" class="text-gray-700">Team</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500">Contact</a>
+      
+                <!-- New Signup Link added -->
+                <a href="#signup" class="text-gray-700 hover:text-orange-500">Signup</a>
+      
+                <a href="#" class="hidden md:block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      
+      <section class="bg-blue-50">
+        <section class="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-16">
+            <div class="max-w-lg">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800">New collection of mobile phones</h1>
+                <p class="text-gray-600 mt-4">Brands like Apple, Samsung, and Google continuously innovate, introducing features such as AI-powered cameras, foldable screens, and 5G connectivity.</p>
+                <button onclick="handleButtonClick()" class="mt-6 bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-all duration-300">Get Started</button>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <img src="./Assets/image/images.jpegman" alt="Illustration" class="w-80 transition-transform duration-300 hover:scale-105">
+            </div>
+        </section>
+    </section>
+    
+               <!--About US-->
+               <section class="bg-gray-100 flex items-center justify-center min-h-screen py-16">
+                <div class="max-w-5xl mx-auto text-center px-6">
+                    
+                    <!-- About Us Header -->
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">About Us</h1>
+                    <button onclick="showMoreAbout()" class="bg-orange-500 text-white px-6 py-2 rounded-lg mt-4 hover:bg-orange-600">Learn More</button>
+
+<p id="moreAbout" class="text-gray-700 text-lg mt-4 hidden">
+  We are committed to bringing you the latest innovations and excellent support. Visit us today!
+</p>
+            
+                    <!-- Image -->
+                    <img src="./Assets/image/store.jpg" alt="Mobile Store" class="w-full md:w-3/4 rounded-lg shadow-lg mb-8">
+            
+                    <!-- Description -->
+                    <p class="text-gray-700 text-lg mb-4">
+                        Welcome to Dinu's phoneshop, your number one destination for the latest mobile phones and accessories. 
+                        <br> Our mission is to provide high-quality products and exceptional customer service, ensuring you have a seamless experience when purchasing your next mobile device.
+                        <br> We offer a wide range of smartphones from top brands like Apple, Samsung, Xiaomi, and more.
+                    </p>
+            
+                    <p class="text-gray-700 text-lg mb-6">
+                        At Dinu's phoneshop, we strive to bring you the best deals and the most up-to-date mobile technology. 
+                        <br> Our knowledgeable staff is always here to help guide you in making the right choice for your needs.
+                    </p>
                 </div>
-           </secttion>
+            </section>
+            
+              <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+
+            
+                <!-- Service 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg"
+                onmouseover="highlightService(this)" 
+                onmouseout="removeHighlight(this)">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img src="Assets/image/repair.jpg" alt="Mobile Repair" class="w-auto h-auto mb-4 mx-auto">
+                    <h3 class="text-2xl font-semibold mb-4">Mobile Repair</h3>
+                    <p class="text-gray-700">Get your mobile devices repaired with high-quality parts and fast service. We fix screens, batteries, and more!</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg"
+                onmouseover="highlightService(this)" 
+                onmouseout="removeHighlight(this)">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img src="./Assets/image/accessories.jpeg" alt="Mobile Repair" class="w-auto h-auto mb-4 mx-auto">
+                    <h3 class="text-2xl font-semibold mb-4">Mobile Accessories</h3>
+                    <p class="text-gray-700">We offer a wide range of mobile accessories, including cases, chargers, earphones, and more.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg"
+                onmouseover="highlightService(this)" 
+                onmouseout="removeHighlight(this)">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img src="./Assets/image/newused.jpeg" alt="Mobile Repair" class="w-auto h-auto mb-4 mx-auto">
+                    <h3 class="text-2xl font-semibold mb-4">New & Used Phones</h3>
+                    <p class="text-gray-700">Explore our collection of new and certified pre-owned phones at unbeatable prices.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    </div>    
+        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+      
+    <section class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div class="max-w-7xl mx-auto text-center p-8">
+          <!--section title-->
+          <p class="text-sm text-gray-700">Portfolio</p>
+          <h2 class="text-2xl font-semibold text-gray-700">Check out our beautiful Portfolio</h2>
+      
+          <!--category filters-->
+          <div class="mt-4 space-x-4" id="filter-buttons">
+            <button data-filter="all" class="filter-btn px-4 py-2 text-gray-600 hover:text-orange-500">All</button>
+            <button data-filter="app" class="filter-btn px-4 py-2 text-gray-600 hover:text-orange-500">App</button>
+            <button data-filter="card" class="filter-btn px-4 py-2 text-gray-600 hover:text-orange-500">Card</button>
+            <button data-filter="web" class="filter-btn px-4 py-2 text-gray-600 hover:text-orange-500">Web</button>
+          </div>
+      
+          <!--portfolio grid-->
+          <div class="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3" id="portfolio-grid">
+            <!--portfolio item 1-->
+            <div class="bg-white p-4 rounded-lg shadow-md" data-category="app">
+              <img src="./Assets/image/Untitled.jpeg1" alt="Portfolio item" class="rounded-md w-full">
+            </div>
+            <!--portfolio item 2-->
+            <div class="bg-white p-4 rounded-lg shadow-md" data-category="card">
+              <img src="./Assets/image/Untitled.jpeg2" alt="Portfolio item" class="rounded-md w-full">
+            </div>
+            <!--portfolio item 3-->
+            <div class="bg-white p-4 rounded-lg shadow-md" data-category="web">
+              <img src="./Assets/image/Untitled.jpeg3" alt="Portfolio item" class="rounded-md w-full">
+            </div>
+            <!--portfolio item 4-->
+            <div class="bg-white p-4 rounded-lg shadow-md" data-category="app">
+              <img src="./Assets/image/images.jpeg4" alt="Portfolio item" class="rounded-md w-full">
+            </div>
+            <!--portfolio item 5-->
+            <div class="bg-white p-4 rounded-lg shadow-md" data-category="card">
+              <img src="./Assets/image/images.jpeg5" alt="Portfolio item" class="rounded-md w-full">
+            </div>
+            <!--portfolio item 6-->
+            <div class="bg-white p-4 rounded-lg shadow-md" data-category="web">
+              <img src="./Assets/image/images.jpeg6" alt="Portfolio item" class="rounded-md w-full">
+            </div>
+          </div>
+        </div>
+      </section>
+            <section>
+                <div class="max-w-7xl mx-auto text-center p-8">
+                    <h2 class="text-3xl font-bold mb-8">Meet our team</h2>
+                    <p class="text-gray-700 mb-8">Our team is dedicated to providing the best service and support for all your mobile needs.</p>
+
+   <!-- Team Member 1 -->
+<div class="bg-gray-100 p-6 rounded-lg shadow-lg transition-all duration-300 hover:bg-orange-100 hover:scale-105">
+    <img src="./Assets/image/man1.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 transition-all duration-300 hover:scale-110">
+    <h3 class="text-2xl font-semibold mb-2">John Doe</h3>
+    <p class="text-lg text-gray-700 mb-4">Mobile Repair Specialist</p>
+    <p class="text-gray-700">John has over 10 years of experience in mobile device repair. He specializes in screen and battery replacements and loves solving technical problems.</p>
+    
+    <!-- Learn More Button -->
+    <button onclick="toggleInfo('johnInfo')" class="text-orange-500 hover:text-orange-600">Learn More</button>
+    
+    <!-- Hidden Extra Info -->
+    <p id="johnInfo" class="hidden text-gray-700 mt-2">
+        John has a passion for technology and is always updating his skills to keep up with the latest trends in mobile repairs.
+    </p>
+</div>
+
+<!-- Team Member 2 -->
+<div class="bg-gray-100 p-6 rounded-lg shadow-lg transition-all duration-300 hover:bg-orange-100 hover:scale-105">
+    <img src="./Assets/image/man2.avif" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 transition-all duration-300 hover:scale-110">
+    <h3 class="text-2xl font-semibold mb-2">Jane Smith</h3>
+    <p class="text-lg text-gray-700 mb-4">Customer Support Lead</p>
+    <p class="text-gray-700">Jane is the first point of contact for our customers. She ensures that every client gets the best assistance and has a seamless experience.</p>
+    
+    <!-- Learn More Button -->
+    <button onclick="toggleInfo('janeInfo')" class="text-orange-500 hover:text-orange-600">Learn More</button>
+    
+    <!-- Hidden Extra Info -->
+    <p id="janeInfo" class="hidden text-gray-700 mt-2">
+        Jane has an extensive background in customer service and enjoys problem-solving, ensuring all our customers are happy with their experience.
+    </p>
+</div>
+
+<!-- Team Member 3 -->
+<div class="bg-gray-100 p-6 rounded-lg shadow-lg transition-all duration-300 hover:bg-orange-100 hover:scale-105">
+    <img src="./Assets/image/man3.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 transition-all duration-300 hover:scale-110">
+    <h3 class="text-2xl font-semibold mb-2">Sam Wilson</h3>
+    <p class="text-lg text-gray-700 mb-4">Accessories Specialist</p>
+    <p class="text-gray-700">Sam knows everything about mobile accessories. Whether it's cases, chargers, or earphones, Sam ensures that we offer the best quality products.</p>
+    
+    <!-- Learn More Button -->
+    <button onclick="toggleInfo('samInfo')" class="text-orange-500 hover:text-orange-600">Learn More</button>
+    
+    <!-- Hidden Extra Info -->
+    <p id="samInfo" class="hidden text-gray-700 mt-2">
+        Sam loves testing the latest accessories and making sure that our store only carries the highest quality products.
+    </p>
+</div>
+</section>
+       
             <section class="bg-gray-100 flex items-center justify-center min-h-screen">
                 <div class="max-w-6xl mx-auto text-center p-8 bg-orange-50 rounded-lg shadow-md">
                     <!--section title-->
@@ -100,44 +238,29 @@
                     </div>
                 </div>
                 </section>
-                <section>
-                    <div>
-                        <div>
-                            <h1>HomeBites</h1>
-                            <p>We take pride in serving freshly prepared dishes curled with the most incredible. Whether you're here for a quick bite or a grand feast, our menu offers something for everyone.</p>
-                            
-                        </div>
-                        <div>
-                            
-                        </div>
-                    </div>
-                </section>
-                               
-   
-                            
-
-        
-                                      
-                                     
-                            
-                                          
-                           
-                            
-
-
-            
-            
-                            
-
-               
-            
-             
-        
-                
-        
-                            
-
-
-    
+                  <!-- Contact Information Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Contact Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Address -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Our Address</h3>
+                    <p class="text-gray-700">123 Mobile Street, City, Country</p>
+                </div>
+                <!-- Phone -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Call Us</h3>
+                    <p class="text-gray-700">+1 234 567 890</p>
+                </div>
+                <!-- Email -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Email Us</h3>
+                    <p class="text-gray-700">support@mobileshop.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

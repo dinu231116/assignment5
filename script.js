@@ -47,4 +47,57 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Data cleared.");
     });
 });
+// Navbar "Get Started" Button click
+const getStartedBtn = document.querySelector('nav a.bg-orange-500');
+getStartedBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert('Thank you for getting started with us!');
+});
+function showMoreAbout() {
+  document.getElementById("moreAbout").classList.remove("hidden");
+}
+function highlightService(element) {
+  element.classList.add('bg-orange-100', 'scale-105');
+  element.classList.remove('bg-gray-100');
+}
+
+function removeHighlight(element) {
+  element.classList.add('bg-gray-100');
+  element.classList.remove('bg-orange-100', 'scale-105');
+}
+// Portfolio Filter Function
+const filterButtons = document.querySelectorAll(".filter-btn");
+const portfolioItems = document.querySelectorAll("#portfolio-grid > div");
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const filter = button.getAttribute("data-filter");
+
+        portfolioItems.forEach(item => {
+            const category = item.getAttribute("data-category");
+
+            if (filter === "all" || category === filter) {
+                item.style.display = "block";  // Show item
+            } else {
+                item.style.display = "none";   // Hide item
+            }
+        });
+    });
+});
+// Toggle function to show/hide more info
+function toggleInfo(id) {
+  const info = document.getElementById(id);
+  if (info.classList.contains("hidden")) {
+      info.classList.remove("hidden");
+  } else {
+      info.classList.add("hidden");
+  }
+}
+// Button Click Function
+function handleButtonClick() {
+  alert("Welcome to the new collection of mobile phones!");
+  // You can also navigate to another page like:
+  // window.location.href = "yourpage.html";
+}
+
 
